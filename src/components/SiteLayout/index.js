@@ -30,6 +30,12 @@ const TopContainer = styled.div`
   @media (max-width: 400px) {
     display: flex;
     justify-content: flex-end;
+    margin-top: 10px;
+  }
+
+  &.bottom {
+    margin-top: 0;
+    margin-bottom: 10px;
   }
 `;
 

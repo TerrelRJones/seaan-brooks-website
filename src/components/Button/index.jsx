@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledImgButtonContainer = styled.div`
-  height: 40px;
+  height: 30px;
 
   @media (min-width: 400px) {
     height: 50px;

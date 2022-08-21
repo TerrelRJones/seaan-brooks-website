@@ -5,6 +5,11 @@ const ArtworkContainer = styled.div`
   max-height: 800px;
   max-width: 800px;
   width: 100%;
+
+  @media (max-width: 400px) {
+    max-height: 400px;
+    max-width: 400px;
+  }
 `;
 
 const AlbumImg = styled.img`
