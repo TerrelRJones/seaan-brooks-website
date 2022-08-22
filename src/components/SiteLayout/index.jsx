@@ -18,7 +18,7 @@ const MainContainer = styled.main`
   padding: 0 16px;
   background-color: #ebecee;
 
-  @media (max-width: 400px) {
+  @media (max-width: 500px) {
   }
 `;
 
@@ -32,7 +32,7 @@ const TopContainer = styled.div`
     margin-bottom: 40px;
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 500px) {
     display: flex;
     justify-content: flex-end;
     margin-top: 10px;
@@ -58,7 +58,7 @@ const BottomContainer = styled.footer`
   margin-top: auto;
   margin-bottom: 40px;
 
-  @media (max-width: 400px) {
+  @media (max-width: 500px) {
     margin-bottom: 0;
   }
 `;

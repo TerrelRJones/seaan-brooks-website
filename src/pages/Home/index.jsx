@@ -6,7 +6,7 @@ const ArtworkContainer = styled.div`
   max-width: 800px;
   width: 100%;
 
-  @media (max-width: 400px) {
+  @media (max-width: 500px) {
     max-height: 400px;
     max-width: 400px;
   }

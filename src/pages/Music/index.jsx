@@ -17,7 +17,7 @@ const VideoContainer = styled.div`
   height: 300px;
   margin-bottom: 100px;
 
-  @media (max-width: 400px) {
+  @media (max-width: 500px) {
     width: 300px;
     height: 150px;
     margin-bottom: 60px;
@@ -36,7 +36,7 @@ const Title = styled.h3`
   font-size: 30px;
   margin: 0;
 
-  @media (max-width: 400px) {
+  @media (max-width: 500px) {
     font-size: 20px;
   }
 `;

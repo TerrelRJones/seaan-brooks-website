@@ -10,7 +10,7 @@ const BioContainer = styled.div`
     padding: 0 16px;
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 500px) {
     justify-content: center;
   }
 `;
@@ -22,7 +22,7 @@ const ImageContainer = styled.div`
   margin-right: 40px;
   background-color: black;
 
-  @media (max-width: 400px) {
+  @media (max-width: 500px) {
     width: 100%;
     margin: 20px 0;
   }
@@ -40,7 +40,7 @@ const Title = styled.h1`
   margin: 0;
   margin-bottom: 20px;
 
-  @media (max-width: 400px) {
+  @media (max-width: 500px) {
     font-size: 20px;
     text-align: center;
   }

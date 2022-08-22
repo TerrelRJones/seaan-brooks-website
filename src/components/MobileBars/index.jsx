@@ -7,7 +7,7 @@ const Bars = styled.div`
   width: 40px;
   height: 100%;
 
-  @media (min-width: 400px) {
+  @media (min-width: 500px) {
     display: none;
   }
 `;

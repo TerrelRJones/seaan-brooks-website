@@ -30,7 +30,7 @@ const Icon = styled.img`
     scale: 1.2;
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 500px) {
     height: 30px;
     width: 30px;
   }

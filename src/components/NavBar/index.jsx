@@ -8,7 +8,7 @@ const NavBarContainer = styled.div`
   height: 100%;
   margin: 0 auto;
 
-  @media (max-width: 400px) {
+  @media (max-width: 500px) {
     width: 100%;
   }
 `;
