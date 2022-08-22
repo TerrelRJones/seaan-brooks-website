@@ -53,6 +53,11 @@ const MiddleContainer = styled.div`
 `;
 
 const BottomContainer = styled.footer`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
   width: 100%;
   height: 40px;
   margin-top: auto;
@@ -89,14 +94,12 @@ const SiteLayout = ({ children }) => {
       </TopContainer>
       <MiddleContainer>{children}</MiddleContainer>
       <BottomContainer>
-        <NavBar>
-          <Button
-            img={merchBtn}
-            alt="home button"
-            onClick={() => navigate("merch")}
-          />
-          <SocialIcon />
-        </NavBar>
+        <Button
+          img={merchBtn}
+          alt="home button"
+          onClick={() => navigate("merch")}
+        />
+        <SocialIcon />
       </BottomContainer>
     </MainContainer>
   );
