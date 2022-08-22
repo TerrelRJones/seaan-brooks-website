@@ -23,6 +23,7 @@ const ImageContainer = styled.div`
   background-color: black;
 
   @media (max-width: 400px) {
+    width: 100%;
     margin: 20px 0;
   }
 `;
@@ -40,6 +41,7 @@ const Title = styled.h1`
   margin-bottom: 20px;
 
   @media (max-width: 400px) {
+    font-size: 20px;
     text-align: center;
   }
 `;
