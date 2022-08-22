@@ -5,7 +5,6 @@ const StyledImgButtonContainer = styled.div`
 
   @media (min-width: 400px) {
     height: 50px;
-    transition: scale 0.25s ease-in-out;
 
     &:hover {
       cursor: pointer;

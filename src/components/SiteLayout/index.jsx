@@ -7,14 +7,19 @@ import bioBtn from "../../assets/bio-btn.svg";
 
 import Button from "../Button";
 import NavBar from "../NavBar";
+import SocialIcon from "../SocialIcon";
 import { useNavigate } from "react-router-dom";
 
 const MainContainer = styled.main`
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   padding: 0 16px;
   background-color: #ebecee;
+
+  @media (max-width: 400px) {
+  }
 `;
 
 const TopContainer = styled.div`
@@ -41,10 +46,21 @@ const TopContainer = styled.div`
 
 const MiddleContainer = styled.div`
   height: 100%;
+  flex: 1;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+`;
+
+const BottomContainer = styled.footer`
+  width: 100%;
+  height: 40px;
+  margin-top: auto;
+  margin-bottom: 40px;
+
+  @media (max-width: 400px) {
+    margin-bottom: 0;
+  }
 `;
 
 const SiteLayout = ({ children }) => {
@@ -72,15 +88,16 @@ const SiteLayout = ({ children }) => {
         </NavBar>
       </TopContainer>
       <MiddleContainer>{children}</MiddleContainer>
-      <TopContainer className="bottom">
+      <BottomContainer>
         <NavBar>
           <Button
             img={merchBtn}
             alt="home button"
             onClick={() => navigate("merch")}
           />
+          <SocialIcon />
         </NavBar>
-      </TopContainer>
+      </BottomContainer>
     </MainContainer>
   );
 };
