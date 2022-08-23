@@ -52,12 +52,7 @@ const MiddleContainer = styled.div`
   justify-content: center;
 `;
 
-const BottomContainer = styled.footer`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
+const BottomContainer = styled.div`
   width: 100%;
   height: 40px;
   margin-top: auto;
@@ -66,6 +61,14 @@ const BottomContainer = styled.footer`
   @media (max-width: 500px) {
     margin-bottom: 0;
   }
+`;
+
+const Footer = styled.footer`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px;
 `;
 
 const SiteLayout = ({ children }) => {
@@ -94,12 +97,14 @@ const SiteLayout = ({ children }) => {
       </TopContainer>
       <MiddleContainer>{children}</MiddleContainer>
       <BottomContainer>
-        <Button
-          img={merchBtn}
-          alt="home button"
-          onClick={() => navigate("merch")}
-        />
-        <SocialIcon />
+        <Footer>
+          <Button
+            img={merchBtn}
+            alt="home button"
+            onClick={() => navigate("merch")}
+          />
+          <SocialIcon />
+        </Footer>
       </BottomContainer>
     </MainContainer>
   );
