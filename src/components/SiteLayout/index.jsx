@@ -63,6 +63,12 @@ const BottomContainer = styled.div`
   }
 `;
 
+const Filler = styled.div`
+  flex: 1;
+  height: 100%;
+  background-color: red;
+`;
+
 const Footer = styled.footer`
   display: flex;
   align-items: center;
@@ -103,6 +109,7 @@ const SiteLayout = ({ children }) => {
             alt="home button"
             onClick={() => navigate("merch")}
           />
+          <Filler />
           <SocialIcon />
         </Footer>
       </BottomContainer>
