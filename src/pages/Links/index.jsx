@@ -108,7 +108,7 @@ const Links = () => {
       </div>
       {[
         {
-          id: 7,
+          id: 9,
           alt: "Seaans Website",
           icon: albumArtwork,
           link: "https://www.seaanbrooks.com",
@@ -116,8 +116,8 @@ const Links = () => {
         },
         ...socialIconData,
       ].map(({ id, alt, icon, link, title }) => (
-        <a href={link} target="_blank" rel="noreferrer">
-          <LinksStyled key={id}>
+        <a key={id} href={link} target="_blank" rel="noreferrer">
+          <LinksStyled>
             <div className="contain">
               <Icon src={icon} alt={alt} />
 
