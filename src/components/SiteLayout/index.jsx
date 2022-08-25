@@ -106,7 +106,7 @@ const SiteLayout = ({ children }) => {
         </TopContainer>
       )}
       <MiddleContainer>{children}</MiddleContainer>
-      {currentURL !== "https://seaanbrooks.com/links" && (
+      {currentURL !== "https://www.seaanbrooks.com/links" && (
         <BottomContainer>
           <Footer>
             <Button
