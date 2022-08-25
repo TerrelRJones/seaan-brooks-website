@@ -84,7 +84,7 @@ const SiteLayout = ({ children }) => {
 
   return (
     <MainContainer>
-      {currentURL !== "https://www.seaanbrooks.com/links" && (
+      {!currentURL.includes("/links") && (
         <TopContainer>
           <NavBar>
             <Button
@@ -106,7 +106,7 @@ const SiteLayout = ({ children }) => {
         </TopContainer>
       )}
       <MiddleContainer>{children}</MiddleContainer>
-      {currentURL !== "https://www.seaanbrooks.com/links" && (
+      {!currentURL.includes("/links") && (
         <BottomContainer>
           <Footer>
             <Button
