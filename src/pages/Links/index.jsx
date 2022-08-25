@@ -10,7 +10,7 @@ const LinksContainer = styled.div`
   flex-direction: column;
   justify-content: space-between;
 
-  height: 100vh;
+  height: 100%;
   max-width: 400px;
   width: 100%;
   margin: 0 auto;
@@ -54,6 +54,7 @@ const LinksContainer = styled.div`
     align-items: center;
     justify-content: center;
     height: 20px;
+    margin-top: 15px;
     margin-bottom: 10px;
   }
 `;
@@ -64,6 +65,7 @@ const LinksStyled = styled.div`
   outline: 4px solid black;
   border-radius: 2px;
   color: black;
+  margin-top: 20px;
 
   h3 {
     text-transform: uppercase;
