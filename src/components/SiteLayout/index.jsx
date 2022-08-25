@@ -77,42 +77,48 @@ const Footer = styled.footer`
   max-width: 1200px;
 `;
 
+const currentURL = window.location.href;
+
 const SiteLayout = ({ children }) => {
   const navigate = useNavigate();
 
   return (
     <MainContainer>
-      <TopContainer>
-        <NavBar>
-          <Button
-            img={homeBtn}
-            alt="Home Button"
-            onClick={() => navigate("/")}
-          />
-          <Button
-            img={musicBtn}
-            alt="Music Button"
-            onClick={() => navigate("music")}
-          />
-          <Button
-            img={bioBtn}
-            alt="Bio Button"
-            onClick={() => navigate("bio")}
-          />
-        </NavBar>
-      </TopContainer>
+      {currentURL !== "https://www.seaanbrooks.com/links" && (
+        <TopContainer>
+          <NavBar>
+            <Button
+              img={homeBtn}
+              alt="Home Button"
+              onClick={() => navigate("/")}
+            />
+            <Button
+              img={musicBtn}
+              alt="Music Button"
+              onClick={() => navigate("music")}
+            />
+            <Button
+              img={bioBtn}
+              alt="Bio Button"
+              onClick={() => navigate("bio")}
+            />
+          </NavBar>
+        </TopContainer>
+      )}
       <MiddleContainer>{children}</MiddleContainer>
-      <BottomContainer>
-        <Footer>
-          <Button
-            img={merchBtn}
-            alt="home button"
-            onClick={() => navigate("merch")}
-          />
-          <Filler />
-          <SocialIcon />
-        </Footer>
-      </BottomContainer>
+      {currentURL !== "https://seaanbrooks.com/links" && (
+        <BottomContainer>
+          <Footer>
+            <Button
+              img={merchBtn}
+              alt="home button"
+              onClick={() => navigate("merch")}
+            />
+            <Filler />
+            <SocialIcon />
+          </Footer>
+        </BottomContainer>
+      )}
     </MainContainer>
   );
 };

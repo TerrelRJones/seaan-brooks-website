@@ -2,8 +2,8 @@ import styled from "styled-components";
 import albumArtwork from "../../assets/album-artwork.jpeg";
 
 const ArtworkContainer = styled.div`
-  max-height: 800px;
-  max-width: 800px;
+  max-height: 400px;
+  max-width: 400px;
   width: 100%;
 
   @media (max-width: 500px) {
@@ -12,7 +12,7 @@ const ArtworkContainer = styled.div`
   }
 `;
 
-const AlbumImg = styled.img`
+export const AlbumImg = styled.img`
   width: 100%;
   height: 100%;
 `;

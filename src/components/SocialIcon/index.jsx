@@ -4,6 +4,9 @@ import instagramIcon from "../../assets/instagram-icon.svg";
 import youtubeIcon from "../../assets/youtube-icon.svg";
 import facebookIcon from "../../assets/facebook-icon.svg";
 import twitchIcon from "../../assets/twitch-icon.svg";
+import itunesIcon from "../../assets/itunes.png";
+import spotifyIcon from "../../assets/spotify.png";
+import tidalIcon from "../../assets/tidal.png";
 
 const SocialBtnContainer = styled.div`
   display: flex;
@@ -36,36 +39,62 @@ const Icon = styled.img`
   }
 `;
 
-const socialIconData = [
+export const socialIconData = [
   {
     id: 1,
     alt: "Twitter Icon",
     icon: twitterIcon,
     link: "https://twitter.com/SeaanBrooks",
+    title: "Twitter",
   },
   {
     id: 2,
     alt: "Instagram Icon",
     icon: instagramIcon,
     link: "https://www.instagram.com/seaan_brooks",
+    title: "Instagram",
   },
   {
     id: 3,
     alt: "YouTube Icon",
     icon: youtubeIcon,
     link: "https://www.youtube.com/channel/UCpQgDB0MOFd4x849JS8IyQw",
+    title: "YouTube",
   },
   {
     id: 4,
     alt: "Facebook Icon",
     icon: facebookIcon,
     link: "https://www.facebook.com/SeaanBrooks",
+    title: "FaceBook",
   },
   {
     id: 5,
     alt: "Twitch Icon",
     icon: twitchIcon,
     link: " https://www.twitch.tv/chefseaan",
+    title: "Twitch",
+  },
+  {
+    id: 6,
+    alt: "Itunes Icon",
+    icon: itunesIcon,
+    link: " https://www.twitch.tv/chefseaan",
+    title: "Itunes",
+  },
+  {
+    id: 7,
+    alt: "Spotify Icon",
+    icon: spotifyIcon,
+    link: " https://www.twitch.tv/chefseaan",
+    title: "Spotify",
+  },
+  {
+    id: 8,
+    alt: "Tidal Icon",
+    icon: tidalIcon,
+    link: " https://www.twitch.tv/chefseaan",
+    title: "Tidal",
   },
 ];
 
