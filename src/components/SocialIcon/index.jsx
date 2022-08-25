@@ -77,23 +77,23 @@ export const socialIconData = [
   },
   {
     id: 6,
-    alt: "Itunes Icon",
+    alt: "Apple Music Icon",
     icon: itunesIcon,
-    link: " https://www.twitch.tv/chefseaan",
-    title: "Itunes",
+    link: "https://music.apple.com/in/artist/seaan-brooks/1171934384",
+    title: "Apple Music",
   },
   {
     id: 7,
     alt: "Spotify Icon",
     icon: spotifyIcon,
-    link: " https://www.twitch.tv/chefseaan",
+    link: "https://open.spotify.com/artist/69KjyMm0B05Wn6MOlG3wuu?si=KbcwuWYXTSSC9fm4Tk1DcQ",
     title: "Spotify",
   },
   {
     id: 8,
     alt: "Tidal Icon",
     icon: tidalIcon,
-    link: " https://www.twitch.tv/chefseaan",
+    link: "https://tidal.com/browse/artist/9073256",
     title: "Tidal",
   },
 ];
