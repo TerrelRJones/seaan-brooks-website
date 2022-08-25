@@ -104,7 +104,16 @@ const Links = () => {
           <AlbumImg src={albumArtwork} alt="Album Artwork" />
         </div>
       </div>
-      {socialIconData.map(({ id, alt, icon, link, title }) => (
+      {[
+        {
+          id: 7,
+          alt: "Seaans Website",
+          icon: albumArtwork,
+          link: "https://www.seaanbrooks.com",
+          title: "Website",
+        },
+        ...socialIconData,
+      ].map(({ id, alt, icon, link, title }) => (
         <a href={link} target="_blank" rel="noreferrer">
           <LinksStyled key={id}>
             <div className="contain">
