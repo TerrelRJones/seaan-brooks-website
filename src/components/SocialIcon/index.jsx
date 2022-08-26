@@ -15,11 +15,22 @@ const SocialBtnContainer = styled.div`
   a {
     text-decoration: none;
 
-    &:first-child {
+    &:first-child,
+    &:nth-child(2),
+    &:nth-child(5),
+    &:nth-child(6),
+    &:nth-child(7) {
       margin-right: 10px;
     }
-    &:nth-child(2) {
-      margin-right: 10px;
+
+    @media (max-width: 500px) {
+      &:first-child,
+      &:nth-child(2),
+      &:nth-child(5),
+      &:nth-child(6),
+      &:nth-child(7) {
+        margin-right: 5px;
+      }
     }
   }
 `;
@@ -77,10 +88,10 @@ export const socialIconData = [
   },
   {
     id: 6,
-    alt: "Apple Music Icon",
-    icon: itunesIcon,
-    link: "https://music.apple.com/in/artist/seaan-brooks/1171934384",
-    title: "Apple Music",
+    alt: "Tidal Icon",
+    icon: tidalIcon,
+    link: "https://tidal.com/browse/artist/9073256",
+    title: "Tidal",
   },
   {
     id: 7,
@@ -91,10 +102,10 @@ export const socialIconData = [
   },
   {
     id: 8,
-    alt: "Tidal Icon",
-    icon: tidalIcon,
-    link: "https://tidal.com/browse/artist/9073256",
-    title: "Tidal",
+    alt: "Apple Music Icon",
+    icon: itunesIcon,
+    link: "https://music.apple.com/in/artist/seaan-brooks/1171934384",
+    title: "Apple Music",
   },
 ];
 

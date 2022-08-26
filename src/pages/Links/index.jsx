@@ -107,6 +107,7 @@ const Links = () => {
         </div>
       </div>
       {[
+        ...socialIconData,
         {
           id: 9,
           alt: "Seaans Website",
@@ -114,19 +115,20 @@ const Links = () => {
           link: "https://www.seaanbrooks.com",
           title: "Website",
         },
-        ...socialIconData,
-      ].map(({ id, alt, icon, link, title }) => (
-        <a key={id} href={link} target="_blank" rel="noreferrer">
-          <LinksStyled>
-            <div className="contain">
-              <Icon src={icon} alt={alt} />
+      ]
+        .reverse()
+        .map(({ id, alt, icon, link, title }) => (
+          <a key={id} href={link} target="_blank" rel="noreferrer">
+            <LinksStyled>
+              <div className="contain">
+                <Icon src={icon} alt={alt} />
 
-              <h3>{title}</h3>
-              <div></div>
-            </div>
-          </LinksStyled>
-        </a>
-      ))}
+                <h3>{title}</h3>
+                <div></div>
+              </div>
+            </LinksStyled>
+          </a>
+        ))}
       <div className="logo-container">
         <AslLogo src={aslLogo} alt="ASL LOGO" />
       </div>
