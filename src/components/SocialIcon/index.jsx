@@ -62,7 +62,7 @@ export const socialIconData = [
     id: 2,
     alt: "Instagram Icon",
     icon: instagramIcon,
-    link: "https://www.instagram.com/seaan_brooks",
+    link: "https://www.instagram.com/seaanbrooks/",
     title: "Instagram",
   },
   {
