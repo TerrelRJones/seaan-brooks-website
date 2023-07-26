@@ -69,7 +69,7 @@ export const socialIconData = [
     id: 3,
     alt: "YouTube Icon",
     icon: youtubeIcon,
-    link: "https://www.youtube.com/channel/UCpQgDB0MOFd4x849JS8IyQw",
+    link: "https://www.youtube.com/channel/@SeaanBrooks",
     title: "YouTube",
   },
   {
@@ -83,7 +83,7 @@ export const socialIconData = [
     id: 5,
     alt: "Twitch Icon",
     icon: twitchIcon,
-    link: " https://www.twitch.tv/chefseaan",
+    link: " https://Twitch.com/SeaanGotEm",
     title: "Twitch",
   },
   {
