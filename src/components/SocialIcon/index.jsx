@@ -69,7 +69,7 @@ export const socialIconData = [
     id: 3,
     alt: "YouTube Icon",
     icon: youtubeIcon,
-    link: "https://www.youtube.com/channel/@SeaanBrooks",
+    link: "https://youtube.com/@SeaanBrooks",
     title: "YouTube",
   },
   {
