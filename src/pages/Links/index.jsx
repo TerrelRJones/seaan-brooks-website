@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { socialIconData } from "../../components/SocialIcon";
 import aslLogo from "../../assets/seaan_asl_logo.png";
 import { AlbumImg } from "../Home";
-import albumArtwork from "../../assets/album-artwork.jpeg";
+import albumArtwork from "../../assets/well-be-alright.jpeg";
 import tapIn from "../../assets/tapIn.png";
 
 const LinksContainer = styled.div`
