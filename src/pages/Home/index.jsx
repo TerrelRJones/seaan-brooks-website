@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import albumArtwork from "../../assets/album-artwork.jpeg";
+import albumArtwork from "../../assets/well-be-alright.jpeg";
 
 const ArtworkContainer = styled.div`
-  max-height: 400px;
-  max-width: 400px;
+  max-height: 600px;
+  max-width: 600px;
   width: 100%;
 
   @media (max-width: 500px) {

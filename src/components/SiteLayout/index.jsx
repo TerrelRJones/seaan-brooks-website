@@ -92,11 +92,11 @@ const SiteLayout = ({ children }) => {
               alt="Home Button"
               onClick={() => navigate("/")}
             />
-            <Button
+            {/* <Button
               img={musicBtn}
               alt="Music Button"
               onClick={() => navigate("music")}
-            />
+            /> */}
             <Button
               img={bioBtn}
               alt="Bio Button"
@@ -109,11 +109,11 @@ const SiteLayout = ({ children }) => {
       {!currentURL.includes("/links") && (
         <BottomContainer>
           <Footer>
-            <Button
+            {/* <Button
               img={merchBtn}
               alt="home button"
               onClick={() => navigate("merch")}
-            />
+            /> */}
             <Filler />
             <SocialIcon />
           </Footer>
